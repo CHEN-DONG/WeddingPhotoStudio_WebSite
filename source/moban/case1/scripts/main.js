@@ -10,7 +10,7 @@ $(function () {
                 imageTitle: '生如夏花'
             },
         ],
-        isSlider:true
+        isSlider: true
     });
 });
 
@@ -30,22 +30,22 @@ $(function ($) {
                         var imageUrl = content[i].imageUrl;
                         var imageTitle = content[i].imageTitle;
                         var imageHtml = '';
-                         var infoHtml = '';
+                        var infoHtml = '';
                         if (i == 0) {
-                            imageHtml = '<div class="slider-img" id = "slier' + i +'"><img src="' + imageUrl + '" alt="' + imageTitle + '"> </div>';
+                            imageHtml = '<div class="slider-img" id = "slier' + i + '"><img src="' + imageUrl + '" alt="' + imageTitle + '"> </div>';
                         } else {
-                            imageHtml = '<div class="slider-img" id = "slier' + i +'" style="display:none"><img src="' + imageUrl + '" alt="' + imageTitle + '"> </div>';
+                            imageHtml = '<div class="slider-img" id = "slier' + i + '" style="display:none"><img src="' + imageUrl + '" alt="' + imageTitle + '"> </div>';
                         }
                         $(that).append(imageHtml);
-                       
-
                     })
+                    btnsHtml = '<div class="slider-btns"><div class="slider-btn"><img src="assets/ar-left.png"></div><div class="slider-btn"><img src="assets/ar-right.png"></div></div>';
+                    $(that).append(btnsHtml);
                 }
             };
 
-            (function init() { 
+            (function init() {
                 methods.render();
-              
+
             })();
         }
     });

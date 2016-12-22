@@ -32,6 +32,24 @@ html,body,ul{
 .hvr-rectangle-out:before{
     background:#F59E8A;
 }
-.slider img{
+.slider-img img{
     width: 100%;
+}
+.slider-btns{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+}
+.slider-btns img{
+    width: 45px;
+    height: 45px;
+}
+.slider-btn{
+    width: 90px;
+    height: 45px;
+    background-color: #ccc;
+    text-align: center;
+    cursor: pointer;
+   
 }
