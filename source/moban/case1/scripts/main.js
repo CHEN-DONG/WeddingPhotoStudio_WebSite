@@ -30,12 +30,15 @@ $(function ($) {
                         var imageUrl = content[i].imageUrl;
                         var imageTitle = content[i].imageTitle;
                         var imageHtml = '';
+                         var infoHtml = '';
                         if (i == 0) {
                             imageHtml = '<div class="slider-img" id = "slier' + i +'"><img src="' + imageUrl + '" alt="' + imageTitle + '"> </div>';
                         } else {
                             imageHtml = '<div class="slider-img" id = "slier' + i +'" style="display:none"><img src="' + imageUrl + '" alt="' + imageTitle + '"> </div>';
                         }
                         $(that).append(imageHtml);
+                       
+
                     })
                 }
             };

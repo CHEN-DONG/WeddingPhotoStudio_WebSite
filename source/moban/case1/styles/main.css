@@ -32,3 +32,6 @@ html,body,ul{
 .hvr-rectangle-out:before{
     background:#F59E8A;
 }
+.slider img{
+    width: 100%;
+}
