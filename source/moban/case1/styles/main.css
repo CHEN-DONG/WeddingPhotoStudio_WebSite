@@ -1,8 +1,6 @@
-html,body,ul{
-    margin: 0;
-    padding: 0;
-    font-family:cursive,Microsoft YaHei;
-}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img{
+    margin:0;padding:0;border:0;
+    } 
 .container{
     margin: 0 auto;
 }
@@ -32,24 +30,59 @@ html,body,ul{
 .hvr-rectangle-out:before{
     background:#F59E8A;
 }
-.slider-img img{
-    width: 100%;
-}
-.slider-btns{
+.slider{
+    position: relative;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: -50px;
+}
+.slider-img img{
+    width: 100%; 
+    display: block;
+}
+.slider-btns{
+    display: flex;  
+    position: absolute;
+    bottom: 0px;
 }
 .slider-btns img{
     width: 45px;
     height: 45px;
 }
 .slider-btn{
-    width: 90px;
+    width: 65px;
     height: 45px;
-    background-color: #ccc;
+    background-color: rgba(0,0,0,.5);
     text-align: center;
-    cursor: pointer;
+    cursor: pointer; 
+}
+.slider-info{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+}
+.selected-info{
+     background-color: rgba(245,158,138,.8);
+}
+.contact{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: #F59E8A;
    
+}
+.contact-way{
+    display: flex;
+}
+.contact-way img{
+    width: 45px;
+    height: 45px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
