@@ -1,5 +1,6 @@
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img{
     margin:0;padding:0;border:0;
+    font-family: cursive,Microsoft YaHei;
     } 
 .container{
     margin: 0 auto;
@@ -67,22 +68,34 @@ body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img{
      background-color: rgba(245,158,138,.8);
 }
 .contact{
+    height: 80px;
     display: flex;
     justify-content:center;
     align-items: center;
     background: #F59E8A;
    
 }
-.contact-way{
-    display: flex;
+.third-part,.telephone{
+    width: 17%;
+    text-align: center;
 }
-.contact-way img{
-    width: 45px;
-    height: 45px;
+.telephone p:nth-child(1){
+    font-size: 22px;
+}
+.third-part{
+    display: flex;
+    justify-content: center;
+}
+.third-part img{
+    width: 55px;
+    height: 55px;
 }
 .contact-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    margin-left: 5%;
+}
+.contact-info p:nth-child(1){
+    font-size: 22px;
 }
