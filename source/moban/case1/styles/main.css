@@ -116,13 +116,16 @@ h2{
     margin-top:15px;
     margin-bottom: 15px;
 }
-.works-header{
-    padding: 15px 0;
+.basic-header{
+    padding: 15px;
 }
-.works-header em{
+.basic-header em{
     color: #86D4CD;
 }
-.works-header p{
+.basic-header h1{
+    margin: 10px 0;
+}
+.basic-header p{
     color: #B7B7B7;
     word-break: break-word;
 }
@@ -157,5 +160,36 @@ h2{
     display: block;
 }
 .free-ad{
+    display: flex;
     background: #FFF1F1;
+}
+.free-header{
+    width:60%;
+}
+.free-img{
+    width: 40%
+}
+.free-img img{
+    width: 100%;
+}
+.free-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.free-click{
+    width: 25%;
+    background: #86D4CD;
+    color: #fff;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+.free-click em{
+    color: #fff;
+}
+.zunxiang{
+    color:#F59E8A;
 }
