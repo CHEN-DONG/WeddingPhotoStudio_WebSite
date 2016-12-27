@@ -16,6 +16,11 @@ $(function () {
         ],
         isSlider: true
     });
+    $(".works-imgs").sliphover({
+        duration:300,
+      
+    });
+
 });
 
 $(function ($) {

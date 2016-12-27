@@ -1,9 +1,21 @@
-body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img{
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,figure,table,td,img{
     margin:0;padding:0;border:0;
     font-family: cursive,Microsoft YaHei;
     } 
+h2{
+    word-break: break-all;
+}
 .container{
     margin: 0 auto;
+}
+.center-content{
+    max-width: 75%;
+    margin: 0 auto;
+}
+.divider{
+    width: 100%;
+    height: 2px;
+    background: #EDEDED;
 }
 .header{
     background-color: #000;
@@ -98,4 +110,52 @@ body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img{
 }
 .contact-info p:nth-child(1){
     font-size: 22px;
+}
+/*works*/
+.works{
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.works-header{
+    padding: 15px 0;
+}
+.works-header em{
+    color: #86D4CD;
+}
+.works-header p{
+    color: #B7B7B7;
+    word-break: break-word;
+}
+.works-imgs{
+    display: flex;
+    margin-top: 15px;
+}
+.works-left{
+    flex:1;
+    margin-right: 8px;
+}
+.works-right{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.works-right-top{
+    display: flex;
+    justify-content:space-between;
+    flex:1;
+}
+.works-right-top img{
+    width: calc(50% - 2.5px) !important;
+}
+.works-right-btm{
+    flex:1;
+    margin-top: 8px;
+}
+.works-imgs img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.free-ad{
+    background: #FFF1F1;
 }
