@@ -193,3 +193,15 @@ h2{
 .zunxiang{
     color:#F59E8A;
 }
+.customer-header{
+    display: flex;
+    align-items:center;
+    background: #FEBBAB;
+    border-top: 5px solid #51B8B1;
+    margin-top: 15px;
+    padding: 15px;
+}
+.customer-header em{
+    color: #fff;
+    margin-right: 5px;
+}

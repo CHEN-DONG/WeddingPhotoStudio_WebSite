@@ -14,11 +14,12 @@ $(function () {
                 imageTitle: '韩式浪漫'
             },
         ],
-        isSlider: true
+        isSlider: true,
+
     });
     $(".works-imgs").sliphover({
-        duration:300,
-      
+        duration: 300,
+
     });
 
 });
@@ -33,7 +34,9 @@ $(function ($) {
                 rightbtn: 'slider_right',
 
             };
-            options = $.extend({}, defaults, options);
+            var options = $.extend({}, defaults, options);
+            var time = 1;
+            var reverse = 0;
             var methods = {
                 render: function () {
                     var imageHtml = '';
@@ -61,6 +64,7 @@ $(function ($) {
                     $(that).find('#' + options.rightbtn).bind('click', this.sliderRight);
                 },
                 sliderLeft: function () {
+
                     var sliderImages = $('.slider-img');
                     var sliderInfos = $('.slider-info');
                     $.each(sliderImages, function (i) {
@@ -70,6 +74,10 @@ $(function ($) {
                             $(sliderImages[i - 1]).show();
                             $(sliderInfos[i]).removeClass("selected-info");
                             $(sliderInfos[i - 1]).addClass("selected-info");
+                            time--;
+                            if (time === 1) {
+                                reverse = 0;
+                            }
                             return false;
                         }
                     });
@@ -84,17 +92,44 @@ $(function ($) {
                             $(sliderImages[i + 1]).show();
                             $(sliderInfos[i]).removeClass("selected-info");
                             $(sliderInfos[i + 1]).addClass("selected-info");
+                            time++;
+                            if (time === options.content.length) {
+                                reverse = 1;
+                            }
                             return false;
                         }
                     });
 
+                },
+                autoSlider: function () {
+                    setInterval(function () {
+                        if (reverse === 0) {
+                            methods.sliderRight();
+                        } else {
+                            methods.sliderLeft();
+                        }
+
+                    }, 4500);
                 }
             };
 
             (function init() {
                 methods.render();
                 methods.bindSlideBtns();
+                if (options.isSlider === true) {
+                    methods.autoSlider();
+                }
             })();
+        }
+    });
+
+    $.fn.extend({
+        MainBrowse:function MainBrowse () {
+            var that = this;
+            var defaults = {
+                leftbtn:'browse_left',
+                rightbtn:'browse_right'
+            }
         }
     });
 
