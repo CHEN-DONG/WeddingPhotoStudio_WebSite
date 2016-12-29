@@ -124,12 +124,29 @@ $(function ($) {
     });
 
     $.fn.extend({
-        MainBrowse:function MainBrowse () {
+        MainBrowse:function MainBrowse (options) {
             var that = this;
             var defaults = {
+                imgsArr:[
+                    {
+                        des:'defaut-photo',
+                        url:'assets/comingsoon.png'
+                    }
+                ],
                 leftbtn:'browse_left',
                 rightbtn:'browse_right'
-            }
+            };
+            var options = $.extend({},defaults,options);
+            var methods = {
+                render:function(){
+                    var imglistHtml = '';
+                    var controlHtml = '';
+                    var TitleHtml = '';
+                    var 
+
+                }
+            };
+
         }
     });
 
