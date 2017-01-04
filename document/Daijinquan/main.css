@@ -1,11 +1,16 @@
-body,html{
+body,html,p,h2{
     padding: 0;
     margin: 0;
 }
+body{
+    background: #eee;
+}
 .tab-btns{
+    position: relative;
     display: flex;
     width: 100%;
-    position: relative;
+    background: #fff;
+    margin-bottom: 15px;
 }
 .tab-btns:after{
     content: "";
@@ -37,4 +42,37 @@ body,html{
     bottom: 0;
     border-right: 1px solid #CCCCCC;
     color: #CCCCCC;
+}
+.left-list .right-list{
+    background: #ccc;
+
+}
+.coupon{
+    display: flex;
+    align-items:center;
+    margin: 0 10px 5px 10px;
+    background: #fff;
+    border-radius: 3px;
+}
+.coupon-img{
+    flex:0.3;
+}
+.coupon-img img{
+    width: 100%;
+}
+.coupon-detail{
+    flex: 0.7;
+    padding: 10px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px dashed #ccc;
+}
+.coupon-detail h2{
+    margin-bottom: 10px;
+}
+.coupon-detail p{
+    color: #ccc;
+    margin: 2px 0;
 }
