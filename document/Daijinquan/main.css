@@ -1,0 +1,40 @@
+body,html{
+    padding: 0;
+    margin: 0;
+}
+.tab-btns{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.tab-btns:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #CCCCCC;
+    color: #CCCCCC;
+}
+.tab-selected{
+    color:#F16938;
+}
+.left-btn,.right-btn{
+    position: relative;
+    flex:1;
+    padding: 13px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.left-btn:after{
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-right: 1px solid #CCCCCC;
+    color: #CCCCCC;
+}
